@@ -1,1 +1,1 @@
-# Etch-A-Sketch
+Create a Etch-A-Sketch Project for The Odin Project. This project will utilize everything I've learned so far, including DOM manipulation, events, and CSS styles, and more. 
