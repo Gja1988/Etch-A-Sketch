@@ -1,5 +1,6 @@
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -11,12 +12,7 @@ body {
     grid-template-columns: repeat(16, 1fr);
     grid-template-rows: repeat(16, 1fr);
     gap: 2px;
-    width: 400px;
-    height: 400px;
+    width: 600px;
+    height: 600px;
     background-color: #ddd;
-}
-
-.column,
-.row {
-    background-color: #aaa;
 }
