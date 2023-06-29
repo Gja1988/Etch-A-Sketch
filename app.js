@@ -58,14 +58,17 @@ const makeColumns = () => {
     }
 }
 
-// Click event listener to reset the grid and start again at 16x16 with black ink. 
-resetButton.addEventListener('click', () => {
-    removeListeners();
+// Function to reset the grid back to 16 x 16.
+const resetGrid = () => {
     container.innerHTML = '';
     container.style.gridTemplateColumns = `repeat(16, 1fr)`;
     container.style.gridTemplateRows = `repeat(16, 1fr)`;
-    // makeRows();
     makeColumns();
+}
+
+// Click event listener to reset the grid and start again at 16x16 with black ink. 
+resetButton.addEventListener('click', () => {
+    resetGrid();
     addBlackListener();
 });
 
